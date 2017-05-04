@@ -3,3 +3,4 @@
 .gdbinit
 .project
 /.settings/
+main.c
