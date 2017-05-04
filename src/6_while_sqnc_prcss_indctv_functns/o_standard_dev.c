@@ -1,16 +1,16 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <math.h>
 
 int main() {
 
-    // делаем немного переменных
+    // РґРµР»Р°РµРј РЅРµРјРЅРѕРіРѕ РїРµСЂРµРјРµРЅРЅС‹С…
     int first_part_for_numerator = 0;
     int second_part_for_numenator_without_s = 0;
     int for_counting_s = 0;
     int i = 0;
 
-    // считываем все числа
-    // одновременно подготавливаем куски
+    // СЃС‡РёС‚С‹РІР°РµРј РІСЃРµ С‡РёСЃР»Р°
+    // РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ РїРѕРґРіРѕС‚Р°РІР»РёРІР°РµРј РєСѓСЃРєРё
     while (1) {
         int N;
         scanf("%d", &N);
@@ -24,15 +24,15 @@ int main() {
         }
     }
 
-    //считаем наконец среднее арифметическое
+    //СЃС‡РёС‚Р°РµРј РЅР°РєРѕРЅРµС† СЃСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ
     double s = 0;
     s = for_counting_s * 1.0 / i;
 
-    //числитель для стандартного отклонения
+    //С‡РёСЃР»РёС‚РµР»СЊ РґР»СЏ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРіРѕ РѕС‚РєР»РѕРЅРµРЅРёСЏ
     double numenator = 0;
     numenator = first_part_for_numerator + i * (s * s) - s * second_part_for_numenator_without_s;
 
-    //и теперь получаем ответ
+    //Рё С‚РµРїРµСЂСЊ РїРѕР»СѓС‡Р°РµРј РѕС‚РІРµС‚
     double the_standard_deviation = 0;
     the_standard_deviation = sqrt(numenator / (i - 1));
 

@@ -1,4 +1,4 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <math.h>
 
 double power_without_math (int a, double average) {
@@ -11,7 +11,7 @@ int main() {
     int N[1000];
     int i = 0;
 
-    // считываем все циферки
+    // СЃС‡РёС‚С‹РІР°РµРј РІСЃРµ С†РёС„РµСЂРєРё
     while (1) {
         scanf("%d", &N[i]);
         if (N[i] == 0) {
@@ -22,15 +22,15 @@ int main() {
     int counter_n = 0;
     counter_n = i;
 
-    // ура!! теперь мы считаем среднее арифметическое
+    // СѓСЂР°!! С‚РµРїРµСЂСЊ РјС‹ СЃС‡РёС‚Р°РµРј СЃСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ
     double average = 0;
     for (i = 0; i < counter_n; i++) {
         average += N[i] * 1.0;
     }
     average /= counter_n;
 
-    // а теперь мы медленно и многоэтапно
-    // сделаем стандартное отклонение
+    // Р° С‚РµРїРµСЂСЊ РјС‹ РјРµРґР»РµРЅРЅРѕ Рё РјРЅРѕРіРѕСЌС‚Р°РїРЅРѕ
+    // СЃРґРµР»Р°РµРј СЃС‚Р°РЅРґР°СЂС‚РЅРѕРµ РѕС‚РєР»РѕРЅРµРЅРёРµ
     double the_standard_deviation_squared = 0;
     for (i = 0; i < counter_n; i++) {
         the_standard_deviation_squared += power_without_math(N[i], average);
