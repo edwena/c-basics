@@ -12,7 +12,7 @@ int power(int x, int num) {
     return pow_num;
 }
 
-int run() {
+void run() {
     for (int x = MIN_X; x <= MAX_X; x++) {
         if (function(x) == 0) {
             printf("%d ", x);
