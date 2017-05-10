@@ -30,7 +30,7 @@ int function(int x) {
 // Если на данном отрезке нет ни одного решения, то ничего выводить не нужно.
 int main() {
     scanf("%d %d %d %d", &a, &b, &c, &d);
-    run(a, b, c, d);
+    run();
     printf("\n");
     return 0;
 }
