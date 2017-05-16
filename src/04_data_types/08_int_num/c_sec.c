@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 void time(int sec) {
-    int hours = 0;
-    int min = 0;
-    hours = sec / 3600;
-    min = sec / 60 - hours * 60;
+    int hours = sec / 3600;
+    int min = sec / 60 - hours * 60;
     printf("It is %d hours %d minutes.\n", hours, min);
 }
 

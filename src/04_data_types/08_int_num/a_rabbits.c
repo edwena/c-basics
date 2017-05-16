@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int max_rabbits_in_cage(int cages, int rabbits) {
-    int per_cage = 0;
-    per_cage = rabbits / cages;
+    int per_cage = rabbits / cages;
     if (rabbits % cages != 0) {
         per_cage++;
     }

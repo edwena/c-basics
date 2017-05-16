@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 void time(int degrees) {
-    int hours = 0;
-    int min = 0;
-    hours = degrees / 30;
-    min = (degrees - hours * 30) * 2;
+    int hours = degrees / 30;
+    int min = (degrees - hours * 30) * 2;
     printf("It is %d hours %d minutes.\n", hours, min);
 }
 

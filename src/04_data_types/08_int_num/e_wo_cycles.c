@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 void calc(int lines_on_page, int total_line) {
-    int page = 0;
-    int current_line = 0;
-    page = total_line / lines_on_page;
+    int current_line;
+    int page = total_line / lines_on_page;
     if (total_line % lines_on_page != 0) {
         current_line = total_line % lines_on_page;
         page++;
