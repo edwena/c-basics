@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
 
-unsigned char ToUpper(unsigned char c) {
-    if ('a' <= c && c <= 'z') {
-        return toupper(c);
-    }
-    return c;
-}
-
 // Условия задания:
 // Напишите функцию unsigned char ToUpper(unsigned char c) (C/C++),
 // которая переводит данный символ в верхний регистр.
@@ -16,6 +9,6 @@ unsigned char ToUpper(unsigned char c) {
 int main() {
     char c;
     scanf("%c", &c);
-    printf("%c\n", ToUpper(c));
+    printf("%c\n", toupper(c));
     return 0;
 }
