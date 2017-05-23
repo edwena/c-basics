@@ -4,7 +4,7 @@
 
 int main() {
     char string[MAX_LENGTH];
-    scanf("%s", string);
+    gets(string);
     for (int i = 0 ; string[i] != '\0'; i++) {
         printf("%03d\n", string[i]);
     }

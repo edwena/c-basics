@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-unsigned char changer(unsigned char its_a_char) {
+unsigned char change_case(unsigned char its_a_char) {
     unsigned char changed_char = its_a_char;
     if ('a' <= its_a_char && its_a_char <= 'z') {
         changed_char -= 32;
@@ -16,6 +16,6 @@ unsigned char changer(unsigned char its_a_char) {
 int main() {
     char character;
     scanf("%c", &character);
-    printf("%c\n", changer(character));
+    printf("%c\n", change_case(character));
     return 0;
 }
