@@ -6,14 +6,18 @@
 int main() {
     int elements_num;
     scanf("%d", &elements_num);
-    int string[elements_num];
+    int array[elements_num];
+
     for (int place = 0; place < elements_num; place++) {
-        scanf("%d", &string[place]);
+        scanf("%d", &array[place]);
     }
+
     for (int i = 0; i < elements_num; i++) {
         if (i % 2 == 0) {
-            printf("%d\n", *(string + i));
+            // Здесь можно написать и array[i], но мне нравится больше с указателем.(
+            printf("%d\n", *(array + i));
         }
     }
+
     return 0;
 }
