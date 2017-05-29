@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void swap(int *array_first, int *array_last) {
-    int temp = *array_first;
-    *array_first = *array_last;
-    *array_last = temp;
+void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
 }
 
 void read_array(int *array, int elements_num) {
