@@ -14,16 +14,16 @@ int main() {
     }
 
     int previous_num = array[0];
-    int bigger_num = 0;
+    int bigger_count = 0;
 
     for (int i = 1; i < elements_num; i++) {
         if (array[i] > previous_num) {
-            bigger_num++;
+            bigger_count++;
         }
         previous_num = array[i];
     }
 
-    printf("%d\n", bigger_num);
+    printf("%d\n", bigger_count);
 
     return 0;
 }
