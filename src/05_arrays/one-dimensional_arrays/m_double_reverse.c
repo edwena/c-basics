@@ -7,10 +7,8 @@ void swap(int *x, int *y) {
 }
 
 void fill_array(int *array, int elements_num) {
-    int current_num = 1;
     for (int i = 0; i < elements_num; i++) {
-        array[i] = current_num;
-        current_num++;
+        array[i] = i + 1;
     }
 }
 
