@@ -40,9 +40,8 @@ char* find_max_symm_substring(char *string) {
     int max_symm_length = 1;
     int max_symm_from = 0;
     for (int from = 0; from < length; from++) {
-        for (int to = length - 1; to > from; to--) {
-            if (check_if_symm(string, from, to) &&
-               (max_symm_length < to - from + 1)) {
+        for (int to = length - 1; (to > from) && (max_symm_length < to - from + 1); to--) {
+            if (check_if_symm(string, from, to)) {
                 max_symm_length = to - from + 1;
                 max_symm_from = from;
             }
